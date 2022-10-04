@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+
+        <referenceContainer name="page.wrapper">
+
+            <container name="above-footer-1"  before="footer" htmlTag="section" htmlClass="cg-above-footer-1">
+
+                <container name="above-footer-1-pm"  before="-" htmlTag="div" htmlClass="page-main">
+
+                        <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe-cg" as="subscribe-cg" before="-" template="Codegenixuk_Newsletter::subscribe.phtml" ifconfig="codegenixuk_newsletter/cg_newsletter/enable"/>
+
+                </container>
+
+            </container>
+
+        </referenceContainer>
+
+        <referenceBlock name="form.subscribe" remove="true" />
+
+    </body>
+</page>

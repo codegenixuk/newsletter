@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+
+        <tab id="codegenixuk" translate="label" sortOrder="999">
+            <label>Codegenixuk</label>
+        </tab>
+
+        <section id="codegenixuk_newsletter" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+
+            <class>separator-top</class>
+
+            <label>Newsletter</label>
+
+            <tab>codegenixuk</tab>
+
+            <resource>Codegenixuk_Newsletter::newsletter_config</resource>
+
+            <group id="cg_newsletter" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+
+                <field id="enable" translate="label" type="select" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Enable Newsletter</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <field id="footerTitle" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Footer title text</label>
+                    <comment>Enter title text to be displayed in the footer</comment>
+                </field>
+
+                <field id="footerIntro" translate="label" type="textarea" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Footer intro text</label>
+                    <comment>Enter intro text to be displayed under the title</comment>
+                </field>
+
+            </group>
+
+        </section>
+
+    </system>
+
+</config>
+
