@@ -1,8 +1,8 @@
 {
-    "name": "codegenixuk/module-newsletter",
-    "description": "Magento 2: Newsletter Extension",
+    "name": "codegenixuk/newsletter",
+    "description": "Codegenix: Newsletter",
     "type": "magento2-module",
-    "license": "GPL-3.0",
+    "license": "GPL-3.0-only",
     "authors": [
         {
             "name": "Codegenixuk Uk",
@@ -10,7 +10,9 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "codegenixuk/base": "^1.0.0"
+    },
     "autoload": {
         "files": [
             "registration.php"
